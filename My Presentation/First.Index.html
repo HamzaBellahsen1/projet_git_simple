@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Delicious Bites</h1>
+        <p>Your favorite place for delightful meals!</p>
+        <button onclick="scrollToMenu()">View Menu</button>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-category">
+            <h3>Appetizers</h3>
+            <ul>
+                <li><strong>Caprese Salad</strong> - Fresh tomatoes, mozzarella, and basil.</li>
+                <li><strong>Bruschetta</strong> - Grilled bread topped with tomatoes and basil.</li>
+                <li><strong>Stuffed Mushrooms</strong> - Mushrooms filled with a savory mixture.</li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Main Courses</h3>
+            <ul>
+                <li><strong>Grilled Salmon</strong> - Served with lemon butter sauce.</li>
+                <li><strong>Pasta Primavera</strong> - Tossed with seasonal vegetables.</li>
+                <li><strong>Chicken Alfredo</strong> - Creamy Alfredo sauce over fettuccine.</li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Desserts</h3>
+            <ul>
+                <li><strong>Chocolate Fondue</strong> - With assorted fruits and marshmallows.</li>
+                <li><strong>Tiramisu</strong> - Classic Italian dessert with espresso.</li>
+                <li><strong>Cheesecake</strong> - Rich and creamy, topped with fruit compote.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Delicious Bites is committed to serving the finest food made with the freshest ingredients. Our chefs bring culinary expertise and passion to every dish.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="formResponse"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Delicious Bites. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
